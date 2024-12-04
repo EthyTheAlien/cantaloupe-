@@ -1,0 +1,32 @@
+<html><head><base href="/">
+<style>
+.cantaloupe-image {
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 90vh;
+    transition: opacity 1s ease-in;
+}
+</style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <img src="Cantaloupe-each_fb4c18a5-9367-4770-b99f-7518c72db482.5609c32e87a3110b734aad048bf9fe35.jpeg" 
+         alt="Cantaloupe slices" 
+         class="cantaloupe-image">
+
+    <script>
+        setTimeout(() => {
+            const image = document.querySelector('.cantaloupe-image');
+            image.style.opacity = '1';
+        }, 11000);
+    </script>
+</body>
+</html>
